@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="icon" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>momentum</title>
+</head>
+
+
+<body>
+  <header class="header">
+
+    <!--audiopl start-->
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <!-------------------audioPlPr start--------------------------->
+      <div class="player-advanced">
+        <div class="player-song">Aqua Caelestis</div>
+        <div class="player-progress">
+          <span class="timeline">00:00</span>
+          <span>/</span>
+          <span class="duration">00:00</span>
+          <input type="range" id="progress-audio" value="0" min="0" max="100">
+          <button class="sound sound-icons"></button>
+          <input type="range" id="progress-sound" value="0.5" min="0" max="1" step="0.1">
+        </div>
+      </div>
+       <!-------------------audioPlPr end----------------------------->
+      <ul class="play-list"></ul>
+       <!--audiopl end-->
+    </div>
+
+
+
+
+   
+
+
+     <!--weather start-->
+    <div class="weather">
+      <input type="text" class="city" placeholder="[Enter city]" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+   <!--weather end-->
+
+
+  <!--slider start-->
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+ <!--slider end-->
+
+    <!--дата время start-->
+    <time class="time"></time>
+    <date class="date"></date>
+    <!--дата время end-->
+
+    <!--приветствие start-->
+    <div class="greeting-container">
+      <span id="greeting"></span>
+      <input type="text" class="name" id="name" placeholder = '[Enter name]'/>
+    </div>
+    <!--приветствие end-->
+  </main>
+
+  
+  <footer class="footer">
+     <!--setting start-->
+     <div class="setting">
+        
+        <div class="setting-container">
+          <ul class="setting-list">
+            <h3 class="setting-title-one"></h3>
+            <li>
+              <input type="radio" name="lang" id="lang-en" checked="1">
+              <label for="lang-en" class="lang-one"></label>
+            </li>
+            <li>
+              <input type="radio" name="lang" id="lang-ru">
+              <label for="lang-ru" class="lang-two"></label>
+            </li>
+            <h3 class="setting-title-two"></h3>
+            <li>
+              <input type="checkbox" name="time" id="time-hide" checked="">
+              <label for="time" class="widget-title widget-time"></label>
+            </li>
+            <li>
+              <input type="checkbox" name="date" id="date-hide" checked="">
+              <label for="date" class="widget-title widget-date"></label>
+            </li>
+            <li>
+              <input type="checkbox" name="greeting" id="greeting-hide" checked="">
+              <label for="greeting" class="widget-title widget-greet"></label>
+            </li>
+            <li>
+              <input type="checkbox" name="quote" id="quote-hide" checked="">
+              <label for="quote" class="widget-title widget-quote"></label>
+            </li>
+            <li>
+              <input type="checkbox" name="weather" id="weather-hide" checked="">
+              <label for="weather" class="widget-title widget-weather"></label>
+            </li>
+            <li>
+              <input type="checkbox" name="music" id="music-hide" checked="">
+              <label for="music" class="widget-title widget-music"></label>
+            </li>
+            <li>
+              <input type="checkbox" name="todo" id="todo-hide" checked="">
+              <label for="links" class="widget-title widget-todo"></label>
+            </li>
+
+            <h3 class="setting-title-three"></h3>
+            <li>
+
+              <input type="radio" name="backgr" id="GitHub" checked="1">
+              <label for="backgr" class="backgr-one"></label>
+            </li>
+
+            <li>
+              <input type="radio" name="backgr" id="Unsplash">
+              <label for="Unsplash" class="backgr-two"></label>
+            </li>
+
+            <li>
+              <input type="radio" name="backgr" id="Flickr">
+              <label for="Flickr" class="backgr-three"></label>
+            </li>
+
+            <li>
+              <input type="radio" name="backgr" id="backgr-tags">
+              <input for="backgr-tags" type="text" id="backgr-tags-input" placeholder = 'Enter your tags'/>
+            </li>
+
+          </ul>
+        </div>
+        <button class="setting_btn"></button>
+       </div>
+    
+    <!--setting end-->
+
+
+
+
+
+    <!--quote start-->
+    <div class="quote_h">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+     <!--quote end-->
+
+
+     <!--Dolist start-->
+
+     <div class="todo_container">
+      <div class="todo_contant">
+        <div class="todo-title"></div>
+        <input type="text" placeholder="New Todo" id="in" class="message">
+        <button id="add"></button>
+        <ul class="todo"></ul>
+        <button id="clear"></button>
+        <div class="helps"></div>
+       </div>
+       <button class="todo_icon"></button>
+    </div>
+     <!--Dolist end-->
+
+
+
+
+
+    <!--gitH start-->
+    <div class="author_create">
+      
+          <div class="author_rss">
+          <a href="https://rs.school/js/" target="_blank"><img class="author_rss_logo" src="assets/svg/rss.svg" alt="the logo of the rss"></a>
+          <a href="https://github.com/Janeure" target="_blank"> <img class="author_github_logo" src="assets/svg/github.svg" alt="the logo of the git"></a>
+        </div>
+        <div class="author_year">2022</div>
+    </div>
+    <!--gitH end-->
+  </footer>
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="dataRu.json"></script>
+  <script src="index.js"></script>
+</body>
+</html>
